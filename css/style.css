@@ -283,7 +283,6 @@ section {
 }
 
 /* section about */
-/* section about */
 .about {
     min-height: 100vh;
     padding: 60px 20px;
@@ -362,8 +361,23 @@ section {
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .about-video {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .about-video iframe {
+        width: 90vw;
+        height: 80vh;
+        display: block;
+        border-radius: 0;
     }
 }
+
 
 
 
@@ -480,7 +494,7 @@ section {
   }
 
   .courses .menu-container .menu-card {
-    width: 90%;
+    width: 100%;
     max-width: 350px;
   }
 }
@@ -577,7 +591,7 @@ section {
 
 @media (max-width: 768px) {
   .reviews .review-item {
-    width: 90%;
+    width: 100%;
     max-width: 350px;
   }
 }
@@ -756,10 +770,10 @@ section {
 /* media queries */
 @media(max-width: 770px){
     :root{
-        --main-size : 10px;
-        --title-size : 40px;
-        --btn-size : 12px;
-        --sub-size : 8px;
+        --main-size : 17px;
+        --title-size : 60px;
+        --btn-size : 17px;
+        --sub-size : 15px;
     }
     .header .navbar a{
         margin: 10px 10px;
