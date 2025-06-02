@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Join the iDev University eCommerce course – Learn how to build and grow online businesses." />
+
+    <title>eCommerce Course – iDev University</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<header class="header">
+    <a href="../index.html" class="logo"><img src="../img/Asset 22000.png" alt="iDev University Logo"></a>
+
+    <nav class="navbar" id="navbar">
+        <a href="../index.html">HOME</a>
+        <a href="../index.html#about">ABOUT</a>
+        <a href="../index.html#courses">COURSES</a>
+        <a href="../index.html#reviews">REVIEWS</a>
+        <a href="../index.html#contact">CONTACT</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+</header>
+
+<section class="about" style="padding: 60px 20px; max-width: 900px; margin: 120px auto 60px auto; border: 1px solid var(--yello); border-radius: 15px;">
+    <h1><span>eCommerce</span> Course</h1>
+
+    <p>
+        Want to launch your own online store and start selling like a pro? Our eCommerce course teaches you step-by-step how to create, manage, and grow a successful digital business.
+    </p>
+
+    <!-- Embedded Video -->
+    <div style="margin: 30px 0; text-align: center;">
+        <iframe width="100%" height="315" src="https://drive.google.com/file/d/1212SnFm2nuCLFw0MYMvvsiAtu1adL1ri/preview"
+                title="eCommerce Course Intro" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Course Images -->
+    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px;">
+        <img src="../img/ecom.jpg" style="max-width: 280px; border-radius: 10px;" alt="Course Preview 1">
+        <img src="../img/ecom.jpg" style="max-width: 280px; border-radius: 10px;" alt="Course Preview 2">
+    </div>
+
+    <!-- Key Benefits -->
+    <h3>What You'll Gain:</h3>
+    <ul style="line-height: 1.8;">
+        <li>Build your own online store from scratch</li>
+        <li>Master product research and sourcing</li>
+        <li>Learn how to run effective Facebook and Instagram ads</li>
+        <li>Understand customer psychology and how to write product descriptions that convert</li>
+        <li>Real-life case studies and practical exercises</li>
+    </ul>
+
+    <a href="#register-form" class="btn">Register Now</a>
+
+    <hr style="margin: 40px 0; border-color: var(--yello);">
+
+    <h2>Register for the Course</h2>
+<!--    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvPvMYW8qcMrhJ9aqaepAHtKgkFTWZAOPW3coOsDD6y2-Otw/viewform?embedded=true" width="640" height="856" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>-->
+    <form id="register-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScvPvMYW8qcMrhJ9aqaepAHtKgkFTWZAOPW3coOsDD6y2-Otw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="join">
+        <div>
+            <span>Full Name</span>
+            <input type="text" name="entry.1759283906" required placeholder="Enter your full name" />
+        </div>
+        <div>
+            <span>Email Address</span>
+            <input type="email" name="entry.1856113421" required placeholder="example@mail.com" />
+        </div>
+        <div>
+            <span>Phone Number</span>
+            <input type="tel" name="entry.1788524645" required placeholder="e.g. 0555123456" />
+        </div>
+        <div>
+            <span>Preferred City</span>
+            <input type="text" name="entry.1188059607" required placeholder="e.g. Tlemcen" />
+        </div>
+        <div style="margin-top: 10px;">
+            <label><input type="checkbox" required /> I understand this is an in-person course and someone from the team will contact me to confirm my seat.</label>
+        </div>
+        <button type="submit" class="submit">Confirm Registration</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="social-icons">
+        <a href="https://www.instagram.com/idev.university" target="_blank">
+            <span class="fab fa-instagram"></span>
+        </a>
+        <a href="mailto:idevuniversity@gmail.com">
+            <span class="fas fa-envelope"></span>
+        </a>
+        <a href="https://wa.me/213671962873" target="_blank">
+            <span class="fab fa-whatsapp"></span>
+        </a>
+        <a href="tel:+213671962873">
+            <span class="fas fa-phone"></span>
+        </a>
+    </div>
+    <p>© 2025 iDev University. powered By boumediene.dev ..</p>
+</footer>
+
+<iframe name="hidden_iframe" style="display:none;" onload="if(submitted) { alert('Thank you! Your registration has been received.'); }"></iframe>
+<script>
+  let submitted = false;
+</script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
