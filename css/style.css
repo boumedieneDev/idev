@@ -780,67 +780,309 @@ section {
     }
 }
 
-/* section course */
-/* Contact Form Styling */
-.join {
+
+/* ========= 🎓 COURSE LANDING PAGE ONLY ========== */
+
+/* Container */
+.course-landing {
+  max-width: 950px;
+  margin: 100px auto;
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-family: var(--main-font);
+}
+
+/* Hero */
+.course-landing .course-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.course-landing .course-hero h1 {
+  font-size: var(--title-size);
+  color: var(--black);
+}
+.course-landing .course-hero h1 span {
+  color: var(--yello);
+}
+.course-landing .course-hero p {
+  font-size: var(--subtitle-size);
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+/* Video */
+.course-landing .course-video {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* WHY + FOR WHO */
+.course-landing .course-value-target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.course-value-target h2,
+.course-modules h2,
+.course-modules details summary,
+.course-faq h2 {
+  text-align: right;
+  direction: rtl;
+}
+
+/* للتأكد من أن قائمة العناصر تظهر يمين */
+.course-value-target ul,
+.course-modules details ul,
+.course-faq ul {
+  direction: rtl;
+  text-align: right;
+}
+
+/* أيضا نزيد التباعد قليلاً لجمالية أفضل */
+.course-value-target h2,
+.course-modules h2,
+.course-faq h2 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+.course-landing .course-value,
+.course-landing .course-target {
+  flex: 1 1 45%;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.course-landing .course-value {
+  background-color: #f1fbfc;
+  border: 2px solid var(--yello);
+}
+
+.course-landing .course-target {
+  background-color: #ffffff;
+  border: none;
+}
+
+.course-landing .course-value h2,
+.course-landing .course-target h2 {
+  color: var(--black);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.course-landing .course-value ul,
+.course-landing .course-target ul {
+  padding-right: 1.5rem;
+  direction: rtl;
+  color: var(--text-secondary);
+}
+
+/* Image Placeholder */
+.course-landing .course-image-placeholder {
+  text-align: center;
+  margin: 2rem 0;
+}
+.course-landing .course-image-placeholder img {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+/* MODULES / DETAILS */
+.course-landing .course-modules h2 {
+  color: var(--black);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+.course-landing .course-modules details {
+  background-color: #fff;
+  margin-bottom: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--yello);
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+.course-landing .course-modules summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--black);
+  cursor: pointer;
+  list-style: none;
+}
+.course-landing .course-modules details[open] {
+  background-color: #eafcff;
+}
+.course-landing .course-modules ul {
+  margin-top: 10px;
+  padding-right: 1.5rem;
+  color: var(--text-secondary);
+  direction: rtl;
+}
+
+/* INFO (مدة - مكان - السعر) */
+.course-landing .course-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  gap: 20px;
+}
+
+.course-landing .info-box {
+  flex: 1 1 30%;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.course-landing .info-box.duration {
+  background-color: #e8fafd;
+  color: var(--black);
+  border: 2px solid var(--yello);
+}
+
+.course-landing .info-box.price {
+  background-color: var(--yello);
+  color: var(--white);
+  border: none;
+}
+
+.course-landing .info-box.location {
+  background-color: #fff;
+  border: 2px dashed var(--yello);
+  color: var(--black);
+}
+
+.course-landing .info-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: inherit;
+}
+.course-landing .info-box p {
+  font-size: 1rem;
+  color: inherit;
+}
+
+/* FAQ */
+.course-landing .course-faq {
+  margin-top: 3rem;
+  text-align: right;
+  direction: rtl;
+}
+.course-landing .course-faq h2 {
+  font-size: 1.4rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+.course-landing .course-faq ul {
+  padding-right: 1.5rem;
+  list-style: none;
+}
+.course-landing .course-faq li {
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+.course-landing .course-faq strong {
+  color: var(--black);
+}
+
+
+/* CTA Button Section */
+.course-landing .cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+.course-landing .btn {
+  margin-top: 1rem;
+}
+
+/* Form (inside course page only) */
+.course-landing .join {
   display: flex;
   flex-direction: column;
-  background: #fff ;
+  background: #fff;
   gap: 15px;
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
   margin-top: 20px;
 }
-
-.join div {
+.course-landing .join div {
   display: flex;
   flex-direction: column;
 }
-
-.join span {
+.course-landing .join span {
   font-weight: bold;
   margin-bottom: 6px;
-  color: #333;
+  color: var(--text-primary);
 }
-
-.join input[type="text"],
-.join input[type="email"],
-.join input[type="tel"],
-.join input[type="number"] {
+.course-landing .join input[type="text"],
+.course-landing .join input[type="email"],
+.course-landing .join input[type="tel"],
+.course-landing .join input[type="number"] {
   padding: 10px 12px;
   font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius-sm);
   transition: border-color 0.3s ease;
 }
-
-.join input:focus {
+.course-landing .join input:focus {
   border-color: var(--yello);
   outline: none;
 }
-
-.join label {
-  font-size: 14px;
-  color: #666;
+.course-landing .join label {
+  font-size: var(--small-size);
+  color: var(--text-secondary);
 }
-
-.join .submit {
+.course-landing .join .submit {
   background-color: var(--yello);
   color: #000;
   border: none;
   padding: 12px 18px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s;
 }
-
-.join .submit:hover {
-  background-color: #ffd800;
+.course-landing .join .submit:hover {
+  background-color: #1e98a5;
 }
 
+/* RESPONSIVE FIX: Stack Value/Target Boxes */
+@media (max-width: 768px) {
+  .course-landing h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .course-landing h1 span {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  .course-landing .course-hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+
+  .course-landing .course-value,
+  .course-landing .course-target {
+    flex: 1 1 100%;
+  }
+
+
+}
 
 
 
