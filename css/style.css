@@ -1084,6 +1084,191 @@ section {
 
 }
 
+.multi-level-title {
+  text-align: right;
+  color: var(--black);
+  margin: 60px 0 20px;
+  font-size: 1.8rem;
+}
+
+.course-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.level-card {
+  flex: 1 1 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--yello);
+  direction: rtl;
+}
+
+.level-card h3 {
+  color: var(--black);
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.level-card p {
+  color: var(--text-secondary);
+  font-size: var(--main-size);
+  text-align: right;
+}
+
+.level-note {
+  margin-top: 30px;
+  font-size: var(--main-size);
+  color: var(--text-secondary);
+  text-align: right;
+  background-color: #f0f8fa;
+  padding: 15px;
+  border-radius: var(--radius-md);
+  border-right: 5px solid var(--yello);
+}
+
+@media (max-width: 768px) {
+  .course-levels {
+    flex-direction: column;
+  }
+
+  .level-card {
+    flex: 1 1 100%;
+  }
+
+  .multi-level-title,
+  .level-card h3,
+  .level-card p,
+  .level-note {
+    text-align: right;
+  }
+
+  .level-note {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .multi-level-title {
+    font-size: 1.5rem;
+  }
+
+  .level-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .level-card p {
+    font-size: 0.9rem;
+  }
+
+  .level-note {
+    font-size: 0.85rem;
+  }
+}
+
+
+.trainer-section.blue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  background-color: var(--yello); /* خلفية موحدة زرقاء */
+  border-radius: var(--radius-md);
+  margin: 80px 0;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+/* Text section (right) */
+.trainer-section.blue .trainer-details {
+  flex: 1;
+  padding: 40px 30px;
+  direction: rtl;
+  text-align: right;
+  color: var(--white);
+}
+
+.trainer-section.blue .trainer-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.trainer-section.blue .trainer-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.trainer-section.blue .trainer-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trainer-section.blue .trainer-details li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Image section (left) */
+.trainer-section.blue .trainer-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+}
+
+.trainer-section.blue .trainer-image img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+  margin-bottom: -20px;
+}
+@media (max-width: 768px) {
+  .trainer-section.blue {
+    flex-direction: column-reverse;
+    text-align: center;
+    position: relative;
+  }
+
+  .trainer-section.blue .trainer-details {
+    padding: 30px 20px;
+  }
+
+  .trainer-section.blue .trainer-image {
+    padding: 0;
+    margin-top: -40px; /* يدفع الصورة للأسفل */
+    z-index: 2;
+  }
+
+  .trainer-section.blue .trainer-image img {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(20px); /* يخرج الصورة قليلاً للأسفل */
+  }
+
+  .trainer-section.blue .trainer-details {
+    text-align: center;
+    align-items: center;
+  }
+
+  .trainer-section.blue .trainer-details h2 {
+    text-align: center;
+  }
+
+  .trainer-section.blue .trainer-details p {
+    text-align: center;
+  }
+
+}
+
 
 
 @media(max-width: 635px){
