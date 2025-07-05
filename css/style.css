@@ -1014,6 +1014,8 @@ section {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   margin-top: 20px;
+  direction: rtl; 
+  text-align: right;
 }
 .course-landing .join div {
   display: flex;
